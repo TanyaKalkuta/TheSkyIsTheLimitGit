@@ -1,0 +1,25 @@
+.blog {
+  background-color: $background-color-light;
+  &_context {
+    background-color: $use-accent-color;
+  }
+}
+
+.blog_context {
+  @media screen and (min-width: $tablet) {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+}
+
+.content_blog {
+  padding: 30px 30px 30px 30px;
+
+  @media screen and (min-width: $tablet) {
+    width: 50%;
+    padding-right: 40px;
+  }
+  @media screen and (min-width: $desktop) {
+    padding: 112px 80px 113px 30px;
+  }
+}

@@ -1,0 +1,61 @@
+*,
+::after,
+::before {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+body {
+  overflow-x: hidden;
+  font-family: $fonts-main-page, sans-serif;
+  color: $text-color-dark;
+  background-color: $background-color-light;
+}
+h1,
+h2,
+h3,
+p {
+  margin-top: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+address {
+  font-style: normal;
+}
+ul,
+li {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  padding: 0;
+  margin: 0;
+}
+.container {
+  margin-right: auto;
+  margin-left: auto;
+  min-width: 320px;
+  padding-left: 20px;
+  padding-right: 20px;
+
+  @media screen and (min-width: $tablet) {
+    min-width: $tablet;
+    padding-left: 28px;
+    padding-right: 28px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    max-width: $desktop;
+  }
+}

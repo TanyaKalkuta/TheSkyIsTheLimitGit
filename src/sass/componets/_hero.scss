@@ -1,0 +1,91 @@
+.hero {
+  margin-left: auto;
+  margin-right: auto;
+  //   background-color: $background-color-dark;
+  width: 100%;
+  height: 533px;
+  background-size: cover;
+  background-position: 50% 50%;
+
+  @media screen and (max-width: 767px) {
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+      url('../images/home/showcase.jpg');
+
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (-webkit-min-device-pixel-ratio: 2),
+      screen and (-o-min-device-pixel-ratio: 2/1),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      background-image: linear-gradient(to right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+        url('../images/home/showcase@2x.jpg');
+    }
+  }
+  @media screen and (min-width: $tablet) {
+    height: 1024px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+      url('../images/home/showcase.webp');
+
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (-webkit-min-device-pixel-ratio: 2),
+      screen and (-o-min-device-pixel-ratio: 2/1),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      background-image: linear-gradient(to right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+        url('../images/home/showcase@2x.webp');
+    }
+  }
+  @media screen and (min-width: $desktop) {
+    height: 768px;
+    //   background-image: linear-gradient(to right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    //     url('../images/home/showcase.jpg');
+
+    //   @media screen and (min-device-pixel-ratio: 2),
+    //     screen and (-webkit-min-device-pixel-ratio: 2),
+    //     screen and (-o-min-device-pixel-ratio: 2/1),
+    //     screen and (min-resolution: 192dpi),
+    //     screen and (min-resolution: 2dppx) {
+    //     background-image: linear-gradient(to right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    //       url('../images/home/showcase@2x.jpg');
+    //   }
+  }
+
+  &_container {
+    padding-top: 144px;
+    padding-bottom: 95px;
+    text-align: center;
+    color: $hero-color-white;
+    margin: auto;
+    width: 246px;
+    @media screen and (min-width: $tablet) {
+      padding-top: 407px;
+      padding-bottom: 412px;
+      width: 493px;
+    }
+    @media screen and (min-width: $desktop) {
+      padding-top: 279px;
+      padding-bottom: 284px;
+    }
+  }
+  &_title {
+    font-weight: 300;
+    font-size: 52px;
+    line-height: 1.27;
+    /* or 127% */
+    @media screen and (min-width: $tablet) {
+      font-size: 55px;
+      line-height: 1.2;
+    }
+  }
+  &_content {
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 1.682;
+    /* or 167% */
+    margin-top: 16px;
+    margin-bottom: 27px;
+    @media screen and (min-width: $tablet) {
+      margin-top: 25px;
+      margin-bottom: 29px;
+    }
+  }
+}

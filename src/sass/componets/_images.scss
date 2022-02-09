@@ -1,0 +1,12 @@
+.img_blok {
+  @media screen and (min-width: $tablet) {
+    width: 50%;
+  }
+  .blok_picture {
+    width: 100%;
+    @media screen and (min-width: $tablet) {
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+}

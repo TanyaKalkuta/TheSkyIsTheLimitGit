@@ -1,0 +1,77 @@
+.content_header {
+  // background-color: $background-color-light;
+  text-align: center;
+  padding-top: 50px;
+  padding-bottom: 37px;
+  @media screen and (min-width: $tablet) {
+    padding-top: 48px;
+    padding-bottom: 38px;
+  }
+  @media screen and (min-width: $desktop) {
+    padding-top: 50px;
+    padding-bottom: 39px;
+  }
+  &_subtitle {
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 1.667;
+    /* identical to box height, or 166% */
+    @media screen and (min-width: $tablet) {
+      font-size: 20px;
+      line-height: 1.65;
+    }
+  }
+  &_title {
+    font-weight: 300;
+    font-size: 38px;
+    line-height: 1.263;
+    /* or 126% */
+    color: $text-color-dark;
+    margin: 15px;
+    margin-bottom: 35px;
+  }
+
+  &_text {
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 1.625;
+    /* or 160% */
+    @media screen and (min-width: $tablet) {
+      font-size: 18px;
+      line-height: 1.57;
+    }
+  }
+}
+.content_header_team {
+  @media screen and (min-width: $tablet) {
+    padding-bottom: 49px;
+  }
+  @media screen and (min-width: $desktop) {
+    padding-top: 49px;
+    padding-bottom: 45px;
+  }
+}
+.content_header_blog {
+  text-align: start;
+  color: $text-color-white;
+  &_title {
+    font-weight: 300;
+    font-size: 38px;
+    line-height: 1.264;
+    /* or 126% */
+    margin: 5px;
+    margin-bottom: 26px;
+  }
+}
+.content_header_callback {
+  text-align: start;
+
+  &_title {
+    color: $text-color-dark;
+    font-weight: 300;
+    font-size: 38px;
+    line-height: 1.264;
+    /* or 126% */
+    margin-bottom: 34px;
+  }
+}

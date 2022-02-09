@@ -1,0 +1,105 @@
+.team {
+  background-color: $text-color-white;
+  padding-bottom: 50px;
+  @media screen and (min-width: $tablet) {
+    padding-bottom: 59px;
+  }
+}
+.team_list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  @media screen and (min-width: $tablet) {
+    margin-right: -19px;
+  }
+  @media screen and (min-width: $desktop) {
+    margin-right: -16px;
+  }
+}
+
+.team_item {
+  text-align: center;
+  width: 100%;
+
+  @media screen and (max-width: $mobile) {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  @media screen and (min-width: $tablet) {
+    width: calc(100% / 3 - 19px);
+    margin-right: 19px;
+  }
+  @media screen and (min-width: $desktop) {
+    width: calc(100% / 3 - 16px);
+    margin-right: 16px;
+  }
+}
+.thumb {
+  position: relative;
+  overflow: hidden;
+}
+.social_thumb {
+  position: absolute;
+  left: 0%;
+  top: 0%;
+  width: 100%;
+  height: 100%;
+  padding: 80px 50px 70px 50px;
+  background-color: rgba(0, 0, 0, 0.6);
+  opacity: 0;
+  transition-timing-function: $timing-function;
+  transition-property: opacity;
+  transition-duration: $time;
+  @media screen and (min-width: $tablet) {
+    padding: 59px 31px 54px 31px;
+  }
+  @media screen and (min-width: $desktop) {
+    padding: 130px 110px 121px 102px;
+  }
+}
+
+.team_item:hover {
+  transform: scale(1.01);
+  box-shadow: 2px 2px 12px 2px rgba(0, 0, 0, 0.4);
+  .social_thumb {
+    opacity: 1;
+  }
+}
+
+.social_list-team {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  width: 216px;
+  justify-content: space-between;
+
+  .fab {
+    &:hover,
+    &:focus {
+      color: $text-color-white;
+      opacity: 0.8;
+    }
+  }
+}
+
+.team_title {
+  font-weight: 400;
+  font-size: 23px;
+  line-height: 1.261;
+  margin-top: 15px;
+  margin-bottom: 11px;
+  @media screen and (min-width: $tablet) {
+    margin-top: 14px;
+    margin-bottom: 12px;
+  }
+  @media screen and (min-width: $desktop) {
+    margin-top: 11px;
+  }
+}
+.team_position {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.625;
+}

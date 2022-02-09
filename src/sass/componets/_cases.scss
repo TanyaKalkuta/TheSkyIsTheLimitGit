@@ -1,0 +1,26 @@
+.case {
+  padding-bottom: 46px;
+  @media screen and (min-width: $tablet) {
+    padding-bottom: 48px;
+  }
+
+  &_list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    @media screen and (min-width: $tablet) {
+      margin-right: -8px;
+      margin-bottom: -7px;
+    }
+  }
+  &_item {
+    text-align: center;
+    width: 100%;
+    margin-bottom: 7px;
+
+    @media screen and (min-width: $tablet) {
+      width: calc(100% / 4 - 8px);
+      margin-right: 8px;
+    }
+  }
+}

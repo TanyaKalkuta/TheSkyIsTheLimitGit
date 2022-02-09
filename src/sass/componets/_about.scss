@@ -1,0 +1,117 @@
+.about {
+  background-color: $background-color-white;
+
+  &_context {
+    background-color: $accent-color;
+    @media screen and (min-width: $tablet) {
+      display: flex;
+    }
+  }
+}
+.about_container {
+  text-align: center;
+  padding-top: 31px;
+  padding-bottom: 30px;
+  @media screen and (min-width: $tablet) {
+    padding-top: 40px;
+    padding-bottom: 47px;
+  }
+  @media screen and (min-width: $desktop) {
+    padding-top: 40px;
+    padding-bottom: 19px;
+  }
+}
+
+.services_list {
+  @media screen and (min-width: $tablet) {
+    display: flex;
+    padding-left: 27px;
+    padding-right: 27px;
+  }
+  @media screen and (min-width: $desktop) {
+    padding-left: 38px;
+    padding-right: 38px;
+  }
+}
+.services_item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &:not(:last-child) {
+    margin: 0px 0px 18px 0px;
+    @media screen and (min-width: $tablet) {
+      margin: 0px 51px 0px 0px;
+    }
+    @media screen and (min-width: $desktop) {
+      margin: 0px 71px 0px 0px;
+    }
+  }
+}
+
+.services_icon-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 64px;
+  width: 64px;
+  border-radius: 33.5px;
+  background-color: $accent-color;
+  @media screen and (min-width: $tablet) {
+    height: 67px;
+    width: 67px;
+  }
+  .fas {
+    width: 34px;
+    height: 34px;
+    color: $text-color-white;
+    font-size: 34px;
+    @media screen and (min-width: $tablet) {
+      height: 35px;
+      width: 35px;
+    }
+  }
+}
+.services_title {
+  margin-top: 9px;
+  margin-bottom: 15px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.66;
+  /* identical to box height, or 166% */
+  text-align: center;
+  color: $text-color-dark;
+
+  @media screen and (min-width: $tablet) {
+    width: 192px;
+    margin-top: 15px;
+    margin-bottom: 16px;
+    font-size: 20px;
+    line-height: 1.65;
+    /* identical to box height, or 165% */
+  }
+}
+.services_text {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 1.6;
+  /* or 160% */
+  text-align: center;
+  color: $text-color-dark;
+  @media screen and (min-width: $tablet) {
+    font-size: 18px;
+    line-height: 1.567;
+  }
+}
+
+.content_blok {
+  padding: 30px 30px 30px 30px;
+  @media screen and (min-width: $tablet) {
+    width: 50%;
+    padding-right: 40px;
+  }
+  @media screen and (min-width: $desktop) {
+    padding-top: 84px;
+    padding-bottom: 84px;
+  }
+}
